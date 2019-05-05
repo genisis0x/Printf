@@ -6,22 +6,22 @@
 /*   By: maparmar <maparmar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 19:00:44 by maparmar          #+#    #+#             */
-/*   Updated: 2019/05/04 19:29:16 by maparmar         ###   ########.fr       */
+/*   Updated: 2019/05/04 20:55:09 by maparmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# ifndef FT_PRINTF_H
+#ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
 # include "libft/libft.h"
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
-#include <sys/types.h>
-#include <math.h>
+# include <sys/types.h>
+# include <math.h>
 
-#define ANY2(x, y1, y2) ((x) == (y1) || (x) == (y2))
-#define ANY3(x, y1, y2, y3) ((x) == (y1) || (x) == (y2) || (x) == (y3))
+# define ANY2(x, y1, y2) ((x) == (y1) || (x) == (y2))
+# define ANY3(x, y1, y2, y3) ((x) == (y1) || (x) == (y2) || (x) == (y3))
 
 typedef struct s_conv
 {

@@ -2,7 +2,7 @@ CC = gcc
 FLAGS = -Wall -Wextra -Werror
 NAME = libftprintf.a
 LIBDIR = ./libft/
-SRC = ft_printf.c parser.c cov__chr_str_ptr_mod.c cov__float.c cov__int.c cov__uint.c \
+SRC = ft_printf.c parser.c cov_chr_str_ptr_mod.c cov_float.c cov_int.c cov_uint.c \
 	  utils.c
 
 LIBFILES = ft_atoi.c \

@@ -6,11 +6,22 @@
 /*   By: maparmar <maparmar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 17:30:50 by maparmar          #+#    #+#             */
-/*   Updated: 2019/05/04 19:14:36 by maparmar         ###   ########.fr       */
+/*   Updated: 2019/05/04 20:59:51 by maparmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+int has(char *field, char *str)
+{
+    while (*str)
+    {
+        if (!ft_strchr(field, *str))
+            return (0);
+        str++;
+    }
+    return (1);
+}
 
 int convert(const char **format, va_list ap)
 {
