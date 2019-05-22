@@ -6,7 +6,7 @@
 /*   By: maparmar <maparmar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 17:27:55 by maparmar          #+#    #+#             */
-/*   Updated: 2019/05/04 20:38:54 by maparmar         ###   ########.fr       */
+/*   Updated: 2019/05/06 05:19:05 by maparmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ void	leader(t_conv *conv)
 		conv->lead = ft_strdup("0x");
 	else if (conv->type == 'X')
 		conv->lead = ft_strdup("0X");
-	conv->lead_len = ft_strlen(conv->lead);
+	if (conv->lead)
+		conv->lead_len = ft_strlen(conv->lead);
 }
 
 void	zero(t_conv *conv, int n)
@@ -97,7 +98,9 @@ int		print(t_conv *conv)
 {
 	int		printed;
 
-	printed = ft_putstr(conv->lead);
+	printed = 0;
+	if (conv->lead)
+		printed = ft_putstr(conv->lead);
 	printed += ft_putstr(conv->str);
 	free(conv->lead);
 	free(conv->str);

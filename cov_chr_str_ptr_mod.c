@@ -6,7 +6,7 @@
 /*   By: maparmar <maparmar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 17:27:22 by maparmar          #+#    #+#             */
-/*   Updated: 2019/05/04 20:38:16 by maparmar         ###   ########.fr       */
+/*   Updated: 2019/05/04 21:29:19 by maparmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,18 @@ int			conv_char(t_conv *conv, va_list ap)
 		ft_memset(fix, pad, conv->width - 1);
 		if (has(conv->flags, "-"))
 		{
-			ft_putchar((unsigned char)va_arg(ap, int));
+			ft_putchar(va_arg(ap, int));
 			ft_putstr(fix);
 		}
 		else
 		{
 			ft_putstr(fix);
-			ft_putchar((unsigned char)va_arg(ap, int));
+			ft_putchar(va_arg(ap, int));
 		}
 		free(fix);
 		return (conv->width);
 	}
-	ft_putchar((unsigned char)va_arg(ap, int));
+	ft_putchar(va_arg(ap, int));
 	return (1);
 }
 

@@ -6,14 +6,11 @@
 /*   By: maparmar <maparmar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 17:27:47 by maparmar          #+#    #+#             */
-/*   Updated: 2019/05/04 20:38:36 by maparmar         ###   ########.fr       */
+/*   Updated: 2019/05/06 05:17:40 by maparmar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "ft_printf.h"
-#include <stdlib.h>
-#include <stdarg.h>
 
 static unsigned long long	arg(t_conv *conv, va_list ap)
 {
