@@ -1,39 +1,15 @@
-Ft_printf
+### Ft_printf
 Installation:
 
 git clone https://github.com/Manmeet2018/Printf.git
 make
-Usage: \
+Usage:
 
 Representation of bulit-in function [printf]
 Conversions:
 
-All of the original printf conversions
-%b %B: the int argument is converted to binary
-%r: print non-printable(control) characters
-%w: change the output file descriptor
-%q: roll dice (need int argument, returns 1 - 6)
-Options:
-
-can be different depends on terminal.
-{OFF} off setting
-{SET:BO} set bold
-{SET:FT} set faint
-{SET:IT} set italic
-{SET:UL} set underline
-{SET:RE} set reverse
-{SET:CC} set conceal
-{SET:RV} set reveal
-Color:
-
-{***} set color
-{BGC:***} set background color
-{LT:***} set light color
-BLK black
-RED red
-GRN green
-YEL yellow
-BLU blue
-MGT magenta
-CYN cyan
-WHT white
+1. All of the original printf conversions
+2. %b %B: the int argument is converted to binary
+3. %r: print non-printable(control) characters
+4. %w: change the output file descriptor
+5. %q: roll dice (need int argument, returns 1 - 6)
