@@ -3,7 +3,7 @@ Installation:
 
 git clone https://github.com/Manmeet2018/Printf.git
 make
-Usage:
+Usage: \
 
 Representation of bulit-in function [printf]
 Conversions:
